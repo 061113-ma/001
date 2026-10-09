@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山河揽胜</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: linear-gradient(160deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
+            font-family: "思源黑体", "Microsoft YaHei", sans-serif;
+            color: #fff;
+            padding: 60px 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .title-wrap {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        h1 {
+            font-size: 52px;
+            letter-spacing: 4px;
+            background: linear-gradient(90deg, #f5f7fa, #c3cfe2);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-bottom: 12px;
+        }
+        .sub-title {
+            font-size: 18px;
+            opacity: 0.75;
+        }
+        .grid-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 35px;
+        }
+        .scenery-card {
+            border-radius: 18px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            transition: all 0.35s ease;
+        }
+        .scenery-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+        }
+        .card-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            display: block;
+        }
+        .card-content {
+            padding: 24px;
+        }
+        h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #e0f7fa;
+        }
+        .desc {
+            font-size: 15px;
+            line-height: 1.7;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-wrap">
+            <h1>山河揽胜</h1>
+            <p class="sub-title">阅世间万象，赏天地美景</p>
+        </div>
+        <div class="grid-box">
+            <div class="scenery-card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1506905925346-21bda4d328a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="高山云海">
+                <div class="card-content">
+                    <h3>高山云海</h3>
+                    <p class="desc">云雾漫过层峦叠嶂，朝阳穿透云层，将群山镀上一层金光，尽显山河磅礴壮阔。</p>
+                </div>
+            </div>
+            <div class="scenery-card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1507400492003-124b5494b179?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="湖畔落日">
+                <div class="card-content">
+                    <h3>湖畔落日</h3>
+                    <p class="desc">落日沉入湖面，余晖染透天际，水波粼粼，晚风徐徐，静谧又温柔。</p>
+                </div>
+            </div>
+            <div class="scenery-card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="森林幽谷">
+                <div class="card-content">
+                    <h3>森林幽谷</h3>
+                    <p class="desc">古木参天，林间光影斑驳，溪水潺潺，远离尘世喧嚣，回归自然本真。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
